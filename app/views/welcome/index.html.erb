@@ -3,205 +3,27 @@
   
   <!-- ---------------------- Navigation ---------------------- -->
 
-  <nav class="nav">
-    <div class="logo-box">
-      <%= image_tag("logo.png", alt: "Mark Merritt logo", class: "logo") %>
-      <!-- <img src="img/logo.png" alt="Mark Merritt logo" class="logo"> -->
-    </div>
-    <ul class="nav__items">
-      <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-      <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-    </ul>
-    <button class="btn btn--contact">Contact Me</button>
-  </nav>
+  <%= render "shared/nav" %>
   
-
   <!-- ---------------------- Header ---------------------- -->
 
-  <section class="header">
-    <h1 class="header__heading">Hi, I'm Mark Merritt.</h1>
-    <h3 class="header__subheading">A Ruby on Rails Developer.</h3>
-    <div class="header__avatar-box">
-      <%= image_tag("avatar.png", alt: "Mark Merritt photo", class: "header__avatar") %>
-      <!-- <img src="img/avatar.png" alt="Mark Merritt photo" class="header__avatar"> -->
-    </div>
-    <%= image_tag("header-graphic.png", alt: "Web Development Design", class: "header__design") %>
-    <!-- <img src="img/header-graphic.png" alt="Web Development Design" class="header__design"> -->
-  </section>
-
+  <%= render "welcome/partials/header" %>
 
   <!-- ---------------------- Intro Section ---------------------- -->
 
-  <section class="intro">
-    <div class="intro__desc-box">
-      <p class="intro__desc">
-        I have a passion for building robust and maintable web applications that people love to use.
-        <p class="intro__desc intro__desc--extro">Here are some of my skills...</p>
-      </p>
-    </div>
-  </section>
+  <%= render "welcome/partials/intro" %>
   
-
   <!-- ---------------------- Skills Section ---------------------- -->
 
-  <section id="skills" class="skills">
-    <div class="skills__card-deck">
-
-
-      <div class="skills__card">
-        <div class="skills__card__heading-box">
-          <h3 class="skills__card__heading">Backend</h3>
-        </div>
-        <ul class="skills__list">
-          <li class="skill">
-            <%= image_tag("rails.png", alt: "Ruby on Rails logo", class: "skill-img") %>
-            <!-- <img src="img/rails.png" alt="Ruby on Rails logo" class="skill-img"> -->
-            <p>Ruby on Rails</p>
-          </li>
-          <li class="skill">
-            <%= image_tag("pg.png", alt: "Postgres logo", class: "skill-img") %>
-            <!-- <img src="img/pg.png" alt="Postgres logo" class="skill-img"> -->
-            <p>SQL</p>
-          </li>
-          <li class="skill">
-            <%= image_tag("s3.png", alt: "AWS logo", class: "skill-img") %>
-            <!-- <img src="img/s3.png" alt="AWS logo" class="skill-img"> -->
-            <p>AWS</p>
-          </li>
-          <li class="skill">
-            <%= image_tag("heroku.png", alt: "Heroku logo", class: "skill-img") %>
-            <!-- <img src="img/heroku.png" alt="Heroku logo" class="skill-img"> -->
-            <p>Heroku</p>
-          </li>
-        </ul>
-      </div>
-
-
-      <div class="skills__card">
-        <div class="skills__card__heading-box">
-          <h3 class="skills__card__heading">Frontend</h3>
-        </div>
-        <ul class="skills__list">
-          <li class="skill">
-            <%= image_tag("react.png", alt: "React logo", class: "skill-img") %>
-            <!-- <img src="img/react.png" alt="React logo" class="skill-img"> -->
-            React
-          </li>
-          <li class="skill">
-            <%= image_tag("html.png", alt: "HTML logo", class: "skill-img") %>
-            <!-- <img src="img/html.png" alt="HTML logo" class="skill-img"> -->
-            HTML5
-          </li>
-          <li class="skill">
-            <%= image_tag("css.png", alt: "CSS logo", class: "skill-img") %>
-            <!-- <img src="img/css.png" alt="CSS logo" class="skill-img"> -->
-            CSS3/SASS
-          </li>
-          <li class="skill">
-            <%= image_tag("js.png", alt: "JavaScript logo", class: "skill-img") %>
-            <!-- <img src="img/js.png" alt="JavaScript logo" class="skill-img"> -->
-            ES6+
-          </li>
-        </ul>
-      </div>
-
-
-      <div class="skills__card">
-        <div class="skills__card__heading-box">
-          <h3 class="skills__card__heading">Testing</h3>
-        </div>
-        <ul class="skills__list">
-          <li class="skill">
-            <%= image_tag("testing.png", alt: "Rspec logo", class: "skill-img") %>
-            <!-- <img src="img/testing.png" alt="Rspec logo" class="skill-img"> -->
-            RSpec/Capybara
-          </li>
-          <li class="skill">
-            <%= image_tag("jest.png", alt: "Jest logo", class: "skill-img") %>
-            <!-- <img src="img/jest.png" alt="Jest logo" class="skill-img"> -->
-            Jest
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
+  <%= render "welcome/partials/skills" %>
 
   <!-- ---------------------- Projects Section ---------------------- -->
 
-  <section class="projects" id="projects">
-    <h2 class="projects__heading">Recent Work</h2>
-    <div class="card-deck card-deck--projects">
-      <div class="card card--project">
-        <h3 class="projects__title">United Masonry</h3>
-      </div>
-      <div class="card card--project">
-        <h3 class="projects__title">PatriotSwap</h3>
-      </div>
-      <div class="card card--project">
-        <h3 class="projects__title">MasonOnRails</h3>
-      </div>
-    </div>
-    <div class="card-deck card-deck--projects">
-      <div class="card card--project">
-        <h3 class="projects__title">FairfaxGrub</h3>
-      </div>
-      <div class="card card--project">
-        <h3 class="projects__title">RunningLog</h3>
-      </div>
-      <div class="card card--project">
-        <h3 class="projects__title">StudyCram</h3>
-      </div>
-    </div>
-    <button class="btn btn--projects">
-       See All of My Projects
-    </button>
-    
-  </section>
-
+  <%= render "welcome/partials/projects" %>
 
   <!-- ---------------------- Education Section ---------------------- -->
 
-  <section class="education">
-    <div class="education__desc-box">
-      <h1 class="education__heading">My Education</h1>
-      <p class="education__subheading">
-        Striving to learn something new everyday  
-      </p>
-    </div>
-    <div class="card-deck card-deck--education">
-      <div class="card card--education">
-        <%= image_tag("gmu.png", alt: "GMU logo", class: "education__img--gmu") %>
-        <ul class="education__desc">
-          <li>Bachelors of Science, IT</li>
-          <li>DB Tech and Programming</li>
-          <li><a href="https://catalog.gmu.edu/colleges-schools/engineering/information-sciences-technology/information-technology-bs/#dtp" class="education__link">See the Curriculum</a></li>
-        </ul>
-        
-      </div>
-
-      <div class="card card--education">
-        <%= image_tag("bloc.png", alt: "Bloc logo", class: "education__img--bloc") %>
-        <ul class="education__desc">
-          <li>Coding Bootcamp Grad</li>
-          <li>Ruby on Rails</li>
-          <li><a href="https://www.bloc.io/" class="education__link">Bloc's website</a></li>
-        </ul>
-      </div>
-
-      <div class="card card--education">
-        <%= image_tag("self-study.jpg", alt: "Self Study logo", class: "education__img--self-study") %>
-        <!-- <img src="img/self-study.jpg" alt="" class="education__img--self-study"> -->
-        <h3 class="education__title"></h3>
-        <ul class="education__desc">
-          <li><a href="#">My Reading List</a></li>
-          <li><a href="#">My Online Course List</a></li>
-          <li><a href="#">My Article List</a></li>
-        </ul>
-        <a href="#" class="education__link"></a>
-      </div>
-    </div>
-  </section>
+  <%= render "welcome/partials/education" %>
 
   <!-- ---------------------- Contact Section ---------------------- -->
 
