@@ -4,7 +4,7 @@ describe "navigation" do
   describe "index" do 
     it "is reachable" do 
       visit root_path
-      expect(page.status_code).to eq(200)
+      expect(page).to have_content("Mark")
     end
   end
 end

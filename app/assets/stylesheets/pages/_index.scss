@@ -1,0 +1,390 @@
+// ---------------------   Header  --------------------- //
+
+
+.header {
+  max-width: 114rem;
+  margin: 0 auto;
+  margin-top: 6rem;
+  text-align: center;
+  position: relative;
+
+  &__heading {
+    color: $color-grey;
+  }
+
+    &__subheading {
+      color: $color-grey;
+    }
+
+  &__avatar {
+    width: 10%;
+    margin: 4rem 2rem 0;
+  }
+
+  &__design {
+    width: 60%;
+    display: inline-block;
+  }
+}
+
+
+// ---------------------  Intro section  --------------------- //
+
+.intro {
+  height: 40rem;
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-secondary-light);
+  margin-top: -7rem;
+  padding: 15rem 15rem;
+  text-align: center;
+  position: relative;
+  z-index: -1;
+  
+  &__desc-box {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 18rem;
+    transform: translate(-50%, -50%);
+  }
+
+  &__desc {
+    color: #fff;
+    font-weight: 300;
+    font-size: 3rem;
+
+    &--extro {
+      margin-top: 3rem;
+      font-weight: 700;
+    }
+  }
+}
+
+
+// ---------------------  Skills section  --------------------- //
+
+.skills {
+  max-width: 114rem;
+  margin: 0 auto;
+  margin-top: -6rem;
+
+
+  &__card-deck {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
+    border-radius: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  &__card {
+    flex-basis: 33.333333%;
+    margin-top: 2rem;
+
+    &:not(:last-child) {
+      box-shadow: .3rem 0 0 rgba($color-grey, .1);
+    }
+    
+    &__heading-box {
+      text-align: center;
+    }
+
+    &__heading {
+      margin: 3rem;
+      font-weight: 700;
+      color: $color-grey;
+    }
+  }
+
+  &__list {
+    width: 70%;
+    margin: 0 auto;
+    list-style: none;
+  }
+}
+
+.skill {
+  font-size: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.skill-img {
+  margin-right: 1.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.blog-link a {
+  text-decoration: none;
+  color: $color-grey;
+
+  &:hover {
+    color: $color-secondary;
+  }  
+}
+
+
+
+
+// ---------------------  Projects section  --------------------- //
+
+.projects {
+  max-width: 114rem;
+  margin: 10rem auto;
+  margin-top: -13rem;
+  text-align: center;
+  padding-top: 18rem;
+
+  &__heading {
+    margin: 6rem 0; 
+    color: $color-grey;
+    font-size: 4rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+// ---------------------  Education section  --------------------- //
+
+.education {
+  margin-top: 10rem;
+  height: 40rem;
+  padding: 1rem;
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-secondary-light);
+  text-align: center;
+  
+  &__desc-box {
+    width: 70%;
+    margin: 7rem auto;
+  }
+
+  &__heading {
+    color: #fff;
+  }
+
+  &__subheading {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  &__img--gmu {
+    margin-top: 3rem;
+    width: 15rem;
+  }
+
+  &__img--bloc {
+    margin-top: 6.5rem;
+    width: 15rem;
+  }
+
+  &__img--self-study {
+    margin-top: 6rem;
+    width: 8rem;
+  }
+
+  &__title {
+    font-weight: 500;
+  }
+
+  &__desc {
+    list-style: none;
+    font-size: 2rem;
+
+    li {
+      margin-top: 2rem;
+    }
+  }
+
+  &__link {
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
