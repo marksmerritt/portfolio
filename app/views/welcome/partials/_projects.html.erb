@@ -1,28 +1,57 @@
 <section class="projects" id="projects">
   <h2 class="projects__heading">Recent Work</h2>
   <div class="card-deck card-deck--projects">
-    <div class="card card--project">
-      <h3 class="projects__title">United Masonry</h3>
+  
+    <!-------------------- PatriotSwap -------------------->
+
+    <div class="card card--project patriotswap__card">
+      <div class="project__header">
+        <%= image_tag "projects/ps-logo.png", class: "project__logo" %>
+        <h3 class="project__title patriotswap__title">PatriotSwap</h3>
+      </div>
+      <div class="project__links">
+        <%= link_to "Live Site", "#", class: "project__live-link" %>
+        <%= link_to "GitHub Repo", "#", class: "project__github-link" %>
+      </div>
+      <div class="project__features">
+        <%= link_to "Details", "#", class: "project__features-link" %>
+      </div>
     </div>
-    <div class="card card--project">
-      <h3 class="projects__title">PatriotSwap</h3>
+
+    <!-------------------- United Building Group -------------------->
+
+    <div class="card card--project ubg__card">
+      <div class="project__header">
+        <%= image_tag "projects/ubg-logo.jpg", class: "project__logo" %>
+        <h3 class="project__title ubg__title">UBG Forms</h3>
+      </div>
+      <div class="project__links">
+        <%= link_to "Live Site", "#" %>
+        <%= link_to "GitHub Repo", "#" %>
+      </div>
+      <div class="project__features">
+        <%= link_to "Details", "#", class: "project__features-link" %>
+      </div>
     </div>
-    <div class="card card--project">
-      <h3 class="projects__title">MasonOnRails</h3>
+
+    <!-------------------- FairfaxEats -------------------->
+
+    <div class="card card--project fe__card">
+      <div class="project__header">
+        <%= image_tag "projects/fairfax-eats.png", class: "project__logo" %>
+        <h3 class="project__title fe__title">FairfaxEats</h3>
+      </div>
+      <div class="project__links">
+        <%= link_to "Live Site", "#" %>
+        <%= link_to "GitHub Repo", "#" %>
+      </div>
+      <div class="project__features">
+        <%= link_to "Details", "#", class: "project__features-link" %>
+      </div>
     </div>
-  </div>
-  <div class="card-deck card-deck--projects">
-    <div class="card card--project">
-      <h3 class="projects__title">FairfaxGrub</h3>
-    </div>
-    <div class="card card--project">
-      <h3 class="projects__title">RunningLog</h3>
-    </div>
-    <div class="card card--project">
-      <h3 class="projects__title">StudyCram</h3>
-    </div>
+
   </div>
   <button class="btn btn--projects">
-     See All of My Projects
+     See More on Github
   </button>
 </section>

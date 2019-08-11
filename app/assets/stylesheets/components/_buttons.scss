@@ -23,11 +23,10 @@
     padding: 1.5rem 8rem;
     background-color: transparent;
     color: $color-primary-dark;
-    border: 3px solid currentColor;
+    border: none;
 
     &:hover {
       color: $color-secondary;
-      border-color: currentColor;
       cursor: pointer;
     }
   }

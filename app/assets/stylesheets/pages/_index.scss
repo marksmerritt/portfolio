@@ -10,15 +10,20 @@
 
   &__heading {
     color: $color-grey;
+    font-weight: 400;
   }
 
-    &__subheading {
-      color: $color-grey;
-    }
+  &__subheading {
+    color: $color-grey;
+    margin-bottom: 8rem;
+  }
 
   &__avatar {
-    width: 10%;
-    margin: 4rem 2rem 0;
+    display: inline-block;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin: 3rem 0;
   }
 
   &__design {
@@ -31,10 +36,9 @@
 // ---------------------  Intro section  --------------------- //
 
 .intro {
-  height: 40rem;
+  height: 30rem;
   background-image: linear-gradient(to right bottom, $color-primary-light, $color-secondary-light);
   margin-top: -7rem;
-  padding: 15rem 15rem;
   text-align: center;
   position: relative;
   z-index: -1;
@@ -44,7 +48,7 @@
     position: absolute;
     left: 50%;
     right: 50%;
-    top: 18rem;
+    top: 13rem;
     transform: translate(-50%, -50%);
   }
 
@@ -70,6 +74,7 @@
 
 
   &__card-deck {
+    border: 1px solid $color-grey;
     display: flex;
     width: 90%;
     margin: auto;
@@ -144,15 +149,63 @@
     color: $color-grey;
     font-size: 4rem;
   }
+}
+
+.project {
+  &__header {
+    display: inline-block;
+    margin: 2rem auto;
+  }
+
+  &__logo {
+    width: 5.2rem;
+    height: 4rem;
+  }
 
   &__title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  &__links {
+
+  }
+
+  &__live-link {
+
+  }
+
+  &__github-link {
+
+  }
+
+  &__features {
+
+  }
+
+  &__features-link {
+
+  }
+}
+
+.patriotswap {
+
+  &__title {
+    color: #00ad45;
+  }
+}
+
+.ubg {
+
+  &__title {
+    color: $color-grey;
+  }
+}
+
+.fe {
+
+  &__title {
+    color: #c3191e;
   }
 }
 

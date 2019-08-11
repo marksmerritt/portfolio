@@ -4,10 +4,6 @@
   height: 20rem;
   margin: 3rem auto;
   text-align: center;
-  
-  &--projects {
-
-  }
 
   &--education {
     max-width: 114rem;
@@ -17,11 +13,12 @@
 
 .card {
   position: relative;
+  border: 1px solid $color-grey;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
 
   &--project {
     flex: 0 0 30%;
-    background-color: $color-primary-light;
+    background-color: #fff;
     border-radius: 2rem;
   }
 
@@ -31,5 +28,6 @@
     height: 40rem;
     border-radius: 1rem;
     padding: 3rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
   }
 }
