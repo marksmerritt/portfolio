@@ -9,6 +9,7 @@
   position: relative;
 
   &__heading {
+    font-size: 4rem;
     color: $color-grey;
     font-weight: 400;
   }
@@ -139,7 +140,7 @@
 
 .projects {
   max-width: 114rem;
-  margin: 10rem auto;
+  margin: 10rem auto 20rem auto;
   margin-top: -13rem;
   text-align: center;
   padding-top: 18rem;
@@ -147,14 +148,27 @@
   &__heading {
     margin: 6rem 0; 
     color: $color-grey;
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+
+  &__main-github-link {
+    display: block;
+    margin-top: 4rem;
+    text-decoration: none;
+    color: $color-secondary;
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
   }
 }
 
 .project {
+
   &__header {
     display: inline-block;
-    margin: 2rem auto;
+    margin-bottom: 2rem;
   }
 
   &__logo {
@@ -168,30 +182,171 @@
   }
 
   &__links {
-
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
+  
+  &__live-link,
+  &__github-link {
+    text-decoration: none;
+    width: 40%;
+    padding: .1rem 1rem;
+    border-radius: 3px;
+  }
+
 
   &__live-link {
 
+    &--ps {
+      color: $color-ps;
+      border: 1px solid currentColor;
+
+      &:hover,
+      &:active {
+        color: #fff;
+        border: 1px solid $color-ps;
+        background-color: $color-ps;
+      }
+    }
+
+    &--ubg {
+      color: $color-grey;
+      border: 1px solid currentColor;
+
+      &:hover,
+      &:active {
+        color: #fff;
+        border: 1px solid $color-grey;
+        background-color: $color-grey;
+      }
+    }
+
+    &--fe {
+      color: $color-fe;
+      border: 1px solid currentColor;
+
+      &:hover,
+      &:active {
+        color: #fff;
+        border: 1px solid $color-fe;
+        background-color: $color-fe;
+      }
+    }
+
+    &--trotter {
+      color: $color-trotter;
+      border: 1px solid currentColor;
+
+      &:hover,
+      &:active {
+        color: #fff;
+        border: 1px solid $color-trotter;
+        background-color: $color-trotter;
+      }
+    }
+
+    &--mor {
+      color: $color-mor;
+      border: 1px solid currentColor;
+
+      &:hover,
+      &:active {
+        color: #fff;
+        border: 1px solid $color-mor;
+        background-color: $color-mor;
+      }
+    }
   }
 
   &__github-link {
+    color: #25282D;
+    border: 1px solid currentColor;
 
+    &:hover,
+    &:active {
+      color: #fff;
+      border: 1px solid #25282D;
+      background-color: #25282D;
+    }
   }
 
   &__features {
-
+    margin: 3rem 0 1rem 0;
   }
 
   &__features-link {
+    text-decoration: none;
+    border-radius: 3rem;
+    width: 80%;
+    padding: .5rem 5rem;
+    
+    &--ubg {
+      color: $color-grey;
+      border: 1px solid currentColor;
 
+      &:hover,
+      &:active {
+        color: #fff;
+        border: 1px solid $color-grey;
+        background-color: $color-grey;
+      }
+    }
+
+    &--ps {
+      color: $color-ps;
+      border: 1px solid currentColor;
+
+      &:hover,
+      &:active {
+        color: #fff;
+        border: 1px solid $color-ps;
+        background-color: $color-ps;
+      }
+    }
+
+    &--fe {
+      color: $color-fe;
+      border: 1px solid currentColor;
+
+      &:hover,
+      &:active {
+        color: #fff;
+        border: 1px solid $color-fe;
+        background-color: $color-fe;
+      }
+    }
+
+    &--trotter {
+      color: $color-trotter;
+      border: 1px solid currentColor;
+
+      &:hover,
+      &:active {
+        color: #fff;
+        border: 1px solid $color-trotter;
+        background-color: $color-trotter;
+      }
+    }
+
+    &--mor {
+      color: $color-mor;
+      border: 1px solid currentColor;
+
+      &:hover,
+      &:active {
+        color: #fff;
+        border: 1px solid $color-mor;
+        background-color: $color-mor;
+      }
+    }
   }
 }
 
 .patriotswap {
 
   &__title {
-    color: #00ad45;
+    color: $color-ps;
   }
 }
 
@@ -205,8 +360,27 @@
 .fe {
 
   &__title {
-    color: #c3191e;
+    color: $color-fe;
   }
+}
+
+.gh {
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    color: $color-secondary;
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
+  }
+  
 }
 
 
@@ -215,7 +389,7 @@
 
 .education {
   margin-top: 10rem;
-  height: 40rem;
+  height: 30rem;
   padding: 1rem;
   background-image: linear-gradient(to right bottom, $color-primary-light, $color-secondary-light);
   text-align: center;
@@ -226,6 +400,7 @@
   }
 
   &__heading {
+    font-size: 3.5rem;
     color: #fff;
   }
 
@@ -237,13 +412,12 @@
   }
   
   &__img--gmu {
-    margin-top: 3rem;
-    width: 15rem;
+    width: 10rem;
   }
 
   &__img--bloc {
-    margin-top: 6.5rem;
-    width: 15rem;
+    margin-top: 2.3rem;
+    width: 10rem;
   }
 
   &__img--self-study {
@@ -252,25 +426,40 @@
   }
 
   &__title {
+    margin-top: 1.7rem;
     font-weight: 500;
+    color: $color-grey;
+    text-decoration: underline;
   }
 
   &__desc {
     list-style: none;
     font-size: 2rem;
+    margin-bottom: 2rem;
 
     li {
       margin-top: 2rem;
     }
   }
 
-  &__link {
+  &__desc-link {
+    text-decoration: none;
+    color: $color-primary;
 
+    &:hover,
+    &:active {
+      color: $color-secondary;
+    }
   }
 }
 
 
+// ---------------------  Footer  --------------------- //
 
+.footer {
+  padding: 2rem;
+  border-top: 1px solid $color-grey;
+}
 
 
 

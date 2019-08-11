@@ -8,7 +8,6 @@
       <ul class="education__desc">
         <li>BS, Information Technology</li>
         <li>Concentration: Database Technology and Programming</li>
-<!--         <li><a href="https://catalog.gmu.edu/colleges-schools/engineering/information-sciences-technology/information-technology-bs/#dtp" class="education__link">See the Curriculum</a></li> -->
       </ul>
       
     </div>
@@ -18,19 +17,25 @@
       <ul class="education__desc">
         <li>Coding Bootcamp</li>
         <li>Ruby on Rails Track</li>
-        <!-- <li><a href="https://www.bloc.io/" class="education__link">Bloc's website</a></li> -->
+        <li>
+          <%= link_to "bloc.io", "https://www.bloc.io", target: "_blank", class: "education__desc-link" %>
+        </li>
       </ul>
     </div>
 
     <div class="card card--education">
-      <%= image_tag("self-study.jpg", alt: "Self Study logo", class: "education__img--self-study") %>
-      <h3 class="education__title"></h3>
+      <h3 class="education__title">Other</h3>
       <ul class="education__desc">
-        <li><a href="#">My Reading List</a></li>
-        <li><a href="#">My Online Course List</a></li>
-        <li><a href="#">My Article List</a></li>
+        <li>AS, Business Admin</li>
+        <li>Lean Six Sigma Green Belt</li>
+        <li>ASE Certified Technician</li>
       </ul>
-      <!-- <a href="#" class="education__link"></a> -->
     </div>
+  </div>
+  
+  <div class="footer">
+    <p class="footer_copyright">
+      &copy; 2019 by Mark Merritt. All rights reserved.
+    </p>
   </div>
 </section>

@@ -1,23 +1,7 @@
 <section class="projects" id="projects">
-  <h2 class="projects__heading">Recent Work</h2>
+  <h2 class="projects__heading">Recent Projects</h2>
   <div class="card-deck card-deck--projects">
   
-    <!-------------------- PatriotSwap -------------------->
-
-    <div class="card card--project patriotswap__card">
-      <div class="project__header">
-        <%= image_tag "projects/ps-logo.png", class: "project__logo" %>
-        <h3 class="project__title patriotswap__title">PatriotSwap</h3>
-      </div>
-      <div class="project__links">
-        <%= link_to "Live Site", "#", class: "project__live-link" %>
-        <%= link_to "GitHub Repo", "#", class: "project__github-link" %>
-      </div>
-      <div class="project__features">
-        <%= link_to "Details", "#", class: "project__features-link" %>
-      </div>
-    </div>
-
     <!-------------------- United Building Group -------------------->
 
     <div class="card card--project ubg__card">
@@ -26,11 +10,27 @@
         <h3 class="project__title ubg__title">UBG Forms</h3>
       </div>
       <div class="project__links">
-        <%= link_to "Live Site", "#" %>
-        <%= link_to "GitHub Repo", "#" %>
+        <%= link_to "Live Site", "https://www.ubgforms.com", target: "_blank", class: "project__live-link project__live-link--ubg" %>
+        <%= link_to "GitHub Repo", "https://github.com/marksmerritt/ubg-forms", target: "_blank", class: "project__live-link project__live-link--ubg" %>
       </div>
       <div class="project__features">
-        <%= link_to "Details", "#", class: "project__features-link" %>
+        <%= link_to "Features", "#", class: "project__features-link project__features-link--ubg" %>
+      </div>
+    </div>
+
+    <!-------------------- PatriotSwap -------------------->
+
+    <div class="card card--project patriotswap__card">
+      <div class="project__header">
+        <%= image_tag "projects/ps-logo.png", class: "project__logo" %>
+        <h3 class="project__title patriotswap__title">PatriotSwap</h3>
+      </div>
+      <div class="project__links">
+        <%= link_to "Live Site", "https://www.patriotswap.com", target: "_blank", class: "project__live-link project__live-link--ps" %>
+        <%= link_to "GitHub Repo", "https://github.com/marksmerritt/patriot-swap", target: "_blank", class: "project__live-link project__live-link--ps" %>
+      </div>
+      <div class="project__features">
+        <%= link_to "Features", "#", class: "project__features-link project__features-link--ps" %>
       </div>
     </div>
 
@@ -42,16 +42,61 @@
         <h3 class="project__title fe__title">FairfaxEats</h3>
       </div>
       <div class="project__links">
-        <%= link_to "Live Site", "#" %>
-        <%= link_to "GitHub Repo", "#" %>
+        <%= link_to "Live Site", "#", target: "_blank", class: "project__live-link project__live-link--fe" %>
+        <%= link_to "GitHub Repo", "#", target: "_blank", class: "project__live-link project__live-link--fe" %>
       </div>
       <div class="project__features">
-        <%= link_to "Details", "#", class: "project__features-link" %>
+        <%= link_to "Features", "#", class: "project__features-link project__features-link--fe" %>
       </div>
     </div>
 
   </div>
-  <button class="btn btn--projects">
-     See More on Github
-  </button>
+
+
+  <div class="card-deck card-deck--projects">
+  
+    <!-------------------- TrotterTracker -------------------->
+
+    <div class="card card--project trotter__card">
+      <div class="project__header">
+        <%= image_tag "projects/run-logo.png", class: "project__logo" %>
+        <h3 class="project__title trotter__title">TrotterTracker</h3>
+      </div>
+      <div class="project__links">
+        <%= link_to "Live Site", "#", target: "_blank", class: "project__live-link project__live-link--trotter" %>
+        <%= link_to "GitHub Repo", "#", target: "_blank", class: "project__live-link project__live-link--trotter" %>
+      </div>
+      <div class="project__features">
+        <%= link_to "Features", "#", class: "project__features-link project__features-link--trotter" %>
+      </div>
+    </div>
+
+    <!-------------------- MasonOnRails -------------------->
+
+    <div class="card card--project mor__card">
+      <div class="project__header">
+        <%= image_tag "projects/mor.png", class: "project__logo" %>
+        <h3 class="project__title mor__title">MasonOnRails</h3>
+      </div>
+      <div class="project__links">
+        <%= link_to "Live Site", "#", target: "_blank", class: "project__live-link project__live-link--mor" %>
+        <%= link_to "GitHub Repo", "#", target: "_blank", class: "project__live-link project__live-link--mor" %>
+      </div>
+      <div class="project__features">
+        <%= link_to "Features", "#", class: "project__features-link project__features-link--mor" %>
+      </div>
+    </div>
+
+    <!-------------------- See More on GitHub -------------------->
+
+    <div class="card card--project gh__card">
+      <div class="project__header">
+        <%= image_tag "projects/gh-logo.png", class: "project__logo" %>
+        <h3 class="project__title gh__title">
+          <%= link_to "See More On Github", "https://github.com/marksmerritt", class: "gh__link" %>
+        </h3>
+      </div>
+    </div>
+
+  </div>
 </section>
