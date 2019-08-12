@@ -16,7 +16,7 @@
 
   &__subheading {
     color: $color-grey;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
   }
 
   &__avatar {
@@ -30,6 +30,35 @@
   &__design {
     width: 60%;
     display: inline-block;
+  }
+  
+  &__social-text {
+    color: $color-grey;
+  }
+
+  &__social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  &__social-link {
+    margin-top: 2rem;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__social-icon {
+    width: 6rem;
+    transition: all .2s ease-in-out;
+
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+    }
   }
 }
 
