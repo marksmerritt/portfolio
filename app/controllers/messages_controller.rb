@@ -3,6 +3,7 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     if @message.save
+      MessageMailer.email(@message).deliver_later
       redirect_to root_path, notice: "Thanks for reaching out. I will get back to you ASAP!"
     else
       redirect_to root_path, notice: "There was an error sending your message. Please try again."
