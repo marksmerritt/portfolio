@@ -1,5 +1,12 @@
 <div class="modal" id="contact-modal">
   <div class="modal__content">
     <div class="modal__close-btn">+</div>
+    <%= form_with model: @message, id: "contact-form" do |f| %>
+      <%= f.text_field :name, id: "name-field", autofocus: true %>
+      <%= f.email_field :email, id: "email-field" %>
+      <%= f.text_area :body, id: "body-field" %>
+
+      <%= f.submit "Send", id: "contact-submit" %>
+    <% end %>
   </div>
 </div>
