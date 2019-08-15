@@ -1,6 +1,87 @@
 <div class="modal" id="modal--3">
   <div class="modal__content">
     <div class="modal__close-btn">+</div>
-    <h1>This is PS Modal</h1>
+    <div class="project-modal">
+
+      <!---------- HEADER ---------->
+
+      <div class="project-modal__header">
+        <%= image_tag "projects/ps-logo.png", class: "project-modal__project-icon" %>
+        <h3 class="project-modal__project-name">PatriotSwap</h3>
+      </div>
+      
+      <!---------- DESCRIPTION ---------->
+
+      <div class="project-modal__description">
+        <span class="project-modal__description-label">Description:</span>
+        <p class="project-modal__description-text">
+          A platform for students at George Mason Univerity to buy, sell, and trade textbooks.  
+        </p>
+      </div>
+        
+      <!---------- PRIMARY FEATURES ---------->
+      
+      <div class="project-modal__list">
+        <span class="project-modal__list-label">Primary Features:</span>
+        <ul class="project-modal__list-list project-modal__list-list--features">
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Textbook lookup with the GoogleBooks API
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Dynamic, location-based listing search with ElasticSearch
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Live chat between buyers and sellers with ActionCable
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            In app notifications, transactional emails, and text messaging
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Automatic rake tasks for site cleanup
+          </li>
+        </ul>
+      </div>
+
+      <!---------- TECH USED ---------->
+
+      <div class="project-modal__list">
+        <span class="project-modal__list-label">Primary Tech Used:</span>
+        <ul class="project-modal__list-list">
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Rails 6
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            AWS (S3)
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            GoogleBooks API
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Twilio API
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            RSpec/Capybara/FactoryBot
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Webpack
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            SASS
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>

@@ -57,7 +57,7 @@
 
     &:hover,
     &:active {
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
   }
 }
@@ -307,8 +307,10 @@
   &__features-link {
     text-decoration: none;
     border-radius: 3rem;
-    width: 80%;
-    padding: .5rem 5rem;
+    padding: .5rem 3rem;
+    outline: none;
+    cursor: pointer;
+    font-size: inherit;
     
     &--ubg {
       color: $color-grey;
@@ -488,6 +490,21 @@
 .footer {
   padding: 2rem;
   border-top: 1px solid $color-grey-light;
+
+  &__copyright {
+    color: $color-grey-light;
+  }
+
+  &__repo-link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: $color-primary;
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
 }
 
 

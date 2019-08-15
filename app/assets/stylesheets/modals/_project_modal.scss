@@ -1,0 +1,127 @@
+.project-modal {
+  padding: 3rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__project-icon {
+    margin-right: 2rem;
+  }
+
+  &__project-name {
+    font-weight: 600;
+  }
+
+  // ------------------- Main Description ------------------- //
+
+  &__description {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &__description-label {
+    font-weight: 600;
+  }
+
+  &__description-text {
+  
+  }
+
+  // ------------------- Tech Used ------------------- //
+
+  &__list {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list-label {
+    flex-basis: 20%;
+    font-weight: 600;
+  }
+
+  &__list-list {
+    flex: 1;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &--features {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__list-icon {
+    width: 1rem;
+    height: 1rem;
+    fill: $color-grey;
+    margin-right: .5rem;
+  }
+
+  // ------------------- Outcomes ------------------- //
+  
+  &__outcomes {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__outcomes-label {
+    font-weight: 600;
+  }
+
+  &__outcomes-list {
+    list-style: none;
+
+  }
+
+  &__outcomes-list-item {
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

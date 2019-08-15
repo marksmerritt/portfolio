@@ -14,10 +14,12 @@
   &__content {
     position: relative;
     width: 70%;
+    max-width: 100rem;
     max-height: 90%;
     background-color: #fff;
     border-radius: 4px;
     overflow-y: auto;
+    overflow-x: hidden;
   }
 
   &__close-btn {

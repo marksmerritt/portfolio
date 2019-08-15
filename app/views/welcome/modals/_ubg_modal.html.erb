@@ -1,6 +1,71 @@
 <div class="modal" id="modal--2">
   <div class="modal__content">
     <div class="modal__close-btn">+</div>
-    <h1>This is UBG Modal</h1>
+    <div class="project-modal">
+
+      <!---------- HEADER ---------->
+
+      <div class="project-modal__header">
+        <%= image_tag "projects/ubg-logo.jpg", class: "project-modal__project-icon" %>
+        <h3 class="project-modal__project-name">UBG Forms</h3>
+      </div>
+      
+      <!---------- DESCRIPTION ---------->
+
+      <div class="project-modal__description">
+        <span class="project-modal__description-label">Description:</span>
+        <p class="project-modal__description-text">
+          A Safety Form Management System for United Building Group (UBG) of Virginia. UBG is the parent company of United Masonry, United Building Envelope Restoration, and Alban Masonry. The application allows employees of all 3 companies to submit safety inspections for the construction equipment they use on a daily basis. It automates form transportation, organization, storage, and retrieval. It also copies the forms to their local file server and notifies superviors when a piece of equipment needs repair. 
+        </p>
+      </div>
+
+      <div class="project-modal__list">
+        <span class="project-modal__list-label">Primary Tech Used:</span>
+        <ul class="project-modal__list-list">
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Rails 5.2
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Microsoft Azure
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Postgres
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Redis
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            RSpec/Capybara
+          </li>
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Bootstrap
+          </li>
+        </ul>
+      </div>
+
+      <div class="project-modal__list">
+        <span class="project-modal__list-label">Outcomes:</span>
+        <ul class="project-modal__list-list">
+          <li class="project-modal__list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Reduced the time it takes to fill-out, organize, transport, and store forms by over 75%
+          </li>
+          <li class="project-modal__list-list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Eliminated the need to hire an external service for long-term storage of forms
+          </li>
+          <li class="project-modal__list-list-item">
+            <%= display_icon(icon: "play3", style: "project-modal__list-icon") %>
+            Reduced printing and related maintenance costs by over $5,000/yr
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
