@@ -8,6 +8,23 @@
     max-width: 114rem;
     padding-bottom: 30rem;
   }
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    width: 50%;
+
+    &:not(:first-child){
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 65%;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 80%;
+  }
 }
 
 .card {
@@ -20,6 +37,7 @@
     flex: 0 0 30%;
     background-color: #fff;
     border-radius: 2rem;
+    margin: 0 2rem;
   }
 
   &--education {
@@ -28,5 +46,12 @@
     border-radius: 1rem;
     padding: 3rem;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
+  }
+
+  &--project,
+  &--education {
+    @media screen and (max-width: 900px) {
+      margin-bottom: 3rem;
+    }
   }
 }

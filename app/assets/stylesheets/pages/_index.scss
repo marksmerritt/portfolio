@@ -112,6 +112,10 @@
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
     border-radius: 1rem;
     padding-bottom: 4rem;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
   }
 
   &__card {
@@ -137,6 +141,14 @@
     width: 70%;
     margin: 0 auto;
     list-style: none;
+
+    @media screen and (max-width: 800px) {
+      width: 95%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -145,6 +157,7 @@
   padding: 2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .skill-img {
@@ -474,12 +487,11 @@
   }
 
   &__desc-link {
-    text-decoration: none;
-    color: $color-primary;
+    color: $color-secondary;
 
     &:hover,
     &:active {
-      color: $color-secondary;
+      color: $color-primary;
     }
   }
 }
