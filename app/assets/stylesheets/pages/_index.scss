@@ -105,7 +105,7 @@
 
   &__card-deck {
     border: 1px solid $color-grey;
-    display: flex;
+    display: flex;    
     width: 90%;
     margin: auto;
     background-color: #fff;
@@ -157,7 +157,6 @@
   padding: 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .skill-img {

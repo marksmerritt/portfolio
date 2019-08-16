@@ -1,0 +1,25 @@
+<div class="mobile-nav">
+  <input type="checkbox" class="mobile-nav__checkbox" id="navi-toggle">
+  <label for="navi-toggle" class="mobile-nav__btn">
+    <span class="mobile-nav__icon">&nbsp;</span>
+  </label>
+
+  <div class="mobile-nav__background">&nbsp;</div>
+
+  <nav class="mobile-nav__nav">
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item">
+        <a href="#skills" class="mobile-nav__link">Skills</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#projects" class="mobile-nav__link">Projects</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#education" class="mobile-nav__link">Education</a>
+      </li>
+      <li class="mobile-nav__item">
+        <%= link_to "Resume", resume_path, class: "mobile-nav__link", target: "_blank" %>
+      </li>
+    </ul>
+  </nav>
+</div>
