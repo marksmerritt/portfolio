@@ -161,8 +161,8 @@
 
 .skill-img {
   margin-right: 1.5rem;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .blog-link a {
@@ -181,7 +181,7 @@
 
 .projects {
   max-width: 114rem;
-  margin: 10rem auto 20rem auto;
+  margin: 10rem auto 15rem auto;
   margin-top: -13rem;
   text-align: center;
   padding-top: 18rem;
@@ -202,6 +202,10 @@
     &:active {
       color: $color-primary;
     }
+  }
+
+  &__more-on-github {
+    margin-top: 6rem;
   }
 }
 
@@ -313,7 +317,7 @@
   }
 
   &__features {
-    margin: 3rem 0 1rem 0;
+    margin: 2rem 0 1rem 0;
   }
 
   &__features-link {

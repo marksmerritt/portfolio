@@ -38,47 +38,6 @@
       </div>
     </div>
 
-    <!-------------------- FairfaxEats -------------------->
-
-    <div class="card card--project fe__card">
-      <div class="project__header">
-        <%= image_tag "projects/fairfax-eats.png", class: "project__logo" %>
-        <h3 class="project__title fe__title">FairfaxEats</h3>
-      </div>
-      <div class="project__links">
-        <%= link_to "Live Site", "#", target: "_blank", class: "project__live-link project__live-link--fe" %>
-        <%= link_to "Github", "#", target: "_blank", class: "project__live-link project__live-link--fe" %>
-      </div>
-      <div class="project__features">
-        <button class="project__features-link project__features-link--fe modalable-link modalable-link--4" id= "fe-modal-link">
-          Description
-        </button>
-      </div>
-    </div>
-
-  </div>
-
-
-  <div class="card-deck card-deck--projects">
-  
-    <!-------------------- TrotterTracker -------------------->
-
-    <div class="card card--project trotter__card">
-      <div class="project__header">
-        <%= image_tag "projects/run-logo.png", class: "project__logo" %>
-        <h3 class="project__title trotter__title">TrotterTracker</h3>
-      </div>
-      <div class="project__links">
-        <%= link_to "Live Site", "#", target: "_blank", class: "project__live-link project__live-link--trotter" %>
-        <%= link_to "Github", "#", target: "_blank", class: "project__live-link project__live-link--trotter" %>
-      </div>
-      <div class="project__features">
-        <button class="project__features-link project__features-link--trotter modalable-link modalable-link--5" id= "trotter-modal-link">
-          Description
-        </button>
-      </div>
-    </div>
-
     <!-------------------- MasonOnRails -------------------->
 
     <div class="card card--project mor__card">
@@ -87,26 +46,27 @@
         <h3 class="project__title mor__title">MasonOnRails</h3>
       </div>
       <div class="project__links">
-        <%= link_to "Live Site", "#", target: "_blank", class: "project__live-link project__live-link--mor" %>
-        <%= link_to "Github", "#", target: "_blank", class: "project__live-link project__live-link--mor" %>
+        <%= link_to "Live Site", "https://www.masononrails.com", target: "_blank", class: "project__live-link project__live-link--mor" %>
+        <%= link_to "Github", "https://github.com/marksmerritt/mason-on-rails", target: "_blank", class: "project__live-link project__live-link--mor" %>
       </div>
       <div class="project__features">
-        <button class="project__features-link project__features-link--mor modalable-link modalable-link--6" id= "mor-modal-link">
+        <button class="project__features-link project__features-link--mor modalable-link modalable-link--4" id= "mor-modal-link">
           Description
         </button>
       </div>
     </div>
-
-    <!-------------------- See More on GitHub -------------------->
-
-    <div class="card card--project gh__card">
-      <div class="project__header">
-        <%= image_tag "social/gh-logo.png", class: "project__logo" %>
-        <h3 class="project__title gh__title">
-          <%= link_to "See More On Github", "https://github.com/marksmerritt", class: "gh__link", target: "_blank" %>
-        </h3>
-      </div>
-    </div>
-
   </div>
+
+  <!-------------------- See More on GitHub -------------------->
+  
+
+  <div class="projects__more-on-github">
+    <%= link_to "https://github.com/marksmerritt", target: "_blank" do %>
+      <%= image_tag "social/gh-logo.png", class: "project__logo" %>
+    <% end %>
+    <h3 class="project__title gh__title">
+      <%= link_to "See More On Github", "https://github.com/marksmerritt", class: "gh__link", target: "_blank" %>
+    </h3>
+  </div>
+
 </section>
