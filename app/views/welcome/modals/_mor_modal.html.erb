@@ -1,6 +1,26 @@
 <div class="modal" id="modal--4">
   <div class="modal__content">
     <div class="modal__close-btn">+</div>
-    <h1>This is MoR Modal</h1>
+    <div class="project-modal">
+
+      <!---------- HEADER ---------->
+
+      <div class="project-modal__header">
+        <%= image_tag "projects/mor.png", class: "project-modal__project-icon" %>
+        <h3 class="project-modal__project-name">Rails Template</h3>
+      </div>
+      
+      <!---------- DESCRIPTION ---------->
+
+      <div class="project-modal__description">
+        <span class="project-modal__description-label">Description:</span>
+        <p class="project-modal__description-text">
+          A Ruby script that automatically sets up new Rails applications with the gems and configuration I like using in every project.
+          It's purpose is to speed up development time and, in addition, allow me to test out new Rails features and gems without 
+          having to setup a new application first.   
+        </p>
+      </div>
+        
+    </div>
   </div>
 </div>
