@@ -8,11 +8,16 @@ RSpec.describe Notebook, type: :model do
   end
 
   describe "validation" do 
-    let(:notebook) { FactoryBot.build_stubbed(:notebook) }
+    let(:notebook) { FactoryBot.create(:notebook) }
 
     it "has a name" do 
       notebook.name = nil
       expect(notebook).to_not be_valid
+    end
+
+    it "has a unique name" do 
+      @second_notebook = FactoryBot.build_stubbed(:second_notebook, name: notebook.name)
+      expect(@second_notebook).to_not be_valid
     end
   end
 end
