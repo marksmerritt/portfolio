@@ -17,7 +17,12 @@
 
 @import "pages/index";
 @import "pdf";
+@import "pages/notebooks";
 
 // -------------- Modals -------------- //
 
 @import "modals/project_modal";
+
+// -------------- Devise -------------- //
+
+@import "devise/sign_in";

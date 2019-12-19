@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
-  root 'welcome#index'
-  resources :messages
+  root "welcome#index"
   get "resume/show", as: :resume
 
+  devise_for :users, skip: :registrations
+
+  resources :messages
   resources :notebooks
 end
