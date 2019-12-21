@@ -27,7 +27,46 @@ describe "navigation" do
     it "can be created from a form" do 
       visit new_notebook_path
       fill_in "name-field", with: "Something"
-      expect{ click_button("create-notebook-btn") }.to change{ Notebook.count }.by(1)
+      expect{ click_button("submit-btn") }.to change{ Notebook.count }.by(1)
+    end
+  end
+
+  describe "edit" do 
+    it "has an editable name" do 
+      visit notebook_path(@notebook1)
+      click_link "edit-notebook-#{@notebook1.name}"
+      fill_in "name-field", with: "Something else"
+      click_button "submit-btn"
+
+      expect(@notebook1.reload.name).to eq("Something else")
     end
   end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

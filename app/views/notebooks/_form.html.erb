@@ -1,0 +1,7 @@
+<div class="notebook-form">
+  <%= form_with model: @notebook do |f| %>
+    <%= f.text_field :name, id: "name-field" %>
+
+    <%= f.submit "Submit", id: "submit-btn" %>
+  <% end %>
+</div>

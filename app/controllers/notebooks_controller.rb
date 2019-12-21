@@ -1,12 +1,12 @@
 class NotebooksController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_notebook, only: [:show, :edit, :update]
   
   def index
     @notebooks = Notebook.all
   end
 
   def show
-    @notebook = Notebook.find(params[:id])
   end
 
   def new
@@ -23,10 +23,25 @@ class NotebooksController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    if @notebook.update(notebook_params)
+      redirect_to @notebook
+    else
+      render :edit
+    end
+  end
+
 
   private
 
   def notebook_params
     params.require(:notebook).permit(:name)
+  end
+
+  def set_notebook
+    @notebook = Notebook.find(params[:id])
   end
 end
