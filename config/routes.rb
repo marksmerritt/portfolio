@@ -5,5 +5,10 @@ Rails.application.routes.draw do
   devise_for :users, skip: :registrations
 
   resources :messages
-  resources :notebooks
+
+  resources :notebooks do 
+    resources :notes
+  end
+
+  resources :notes, only: :index
 end
