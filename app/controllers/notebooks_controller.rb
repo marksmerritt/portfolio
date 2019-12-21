@@ -1,6 +1,6 @@
 class NotebooksController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_notebook, only: [:show, :edit, :update]
+  before_action :set_notebook, only: [:show, :edit, :update, :toggle_status]
   
   def index
     @notebooks = Notebook.all
@@ -33,6 +33,12 @@ class NotebooksController < ApplicationController
     else
       render :edit
     end
+  end
+
+  # TODO: Add Flash
+  def toggle_status
+    @notebook.toggle_status!
+    redirect_to notebooks_path
   end
 
 

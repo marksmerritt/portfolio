@@ -1,6 +1,13 @@
 <%= @notebook.name %>
 <%= link_to "Edit", edit_notebook_path(@notebook), id: "edit-notebook-#{@notebook.name}" %>
 
+<% if @notebook.active? %>
+  <%= link_to "Archive", toggle_status_notebook_path(@notebook), method: :patch, id: "toggle-notebook-#{@notebook.id}-status" %>
+<% else %>
+  <%= link_to "Activate", toggle_status_notebook_path(@notebook), method: :patch, id: "toggle-notebook-#{@notebook.id}-status" %>
+<% end %>
+
+
 <%= link_to "New Note", new_notebook_note_path(@notebook), id: "new-note" %>
 
 <% @notes.each do |note| %>

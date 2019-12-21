@@ -47,6 +47,15 @@ describe "navigation" do
       expect(@notebook1.reload.name).to eq("Something else")
     end
   end
+
+  describe "toggle_status" do 
+    it "can be toggled from the show page" do 
+      visit notebook_path(@notebook1)
+      click_link "toggle-notebook-#{@notebook1.id}-status"
+
+      expect(@notebook1.reload.status).to eq("archived")
+    end
+  end
 end
 
 

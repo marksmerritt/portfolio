@@ -20,4 +20,20 @@ RSpec.describe Notebook, type: :model do
       expect(@second_notebook).to_not be_valid
     end
   end
+
+  describe "#toggle_status!" do 
+    it "toggles status from active to archived" do 
+      @active_notebook = FactoryBot.create(:active_notebook)
+      @active_notebook.toggle_status!
+
+      expect(@active_notebook.reload.status).to eq("archived")
+    end
+
+    it "toggles status from archived to active" do 
+      @archived_notebook = FactoryBot.create(:archived_notebook)
+      @archived_notebook.toggle_status!
+
+      expect(@archived_notebook.reload.status).to eq("active")
+    end
+  end
 end

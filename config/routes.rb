@@ -8,6 +8,10 @@ Rails.application.routes.draw do
 
   resources :notebooks do 
     resources :notes, shallow: true
+
+    member do 
+      patch :toggle_status
+    end
   end
 
   resources :notes, only: :index
