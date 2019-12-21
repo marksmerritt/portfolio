@@ -3,7 +3,7 @@ class NotebooksController < ApplicationController
   before_action :set_notebook, only: [:show, :edit, :update, :toggle_status]
   
   def index
-    @notebooks = Notebook.all
+    @notebooks = Notebook.active
   end
 
   def show

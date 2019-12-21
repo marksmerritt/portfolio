@@ -9,9 +9,16 @@ describe "navigation" do
   end
 
   describe "index" do 
-    it "displays a list of notebooks" do 
+    it "displays a list of active notebooks" do 
       visit notebooks_path
       expect(page).to have_content(/#{@notebook1.name}|#{@notebook2.name}/)
+    end
+
+    it "does not display archived notebooks" do 
+      @archived_notebook = FactoryBot.create(:archived_notebook)
+      visit notebooks_path
+
+      expect(page).to_not have_content(@archived_notebook.name)
     end
   end  
 
