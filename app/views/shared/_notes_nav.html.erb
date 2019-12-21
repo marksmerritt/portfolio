@@ -1,0 +1,11 @@
+<nav class="notes-nav">
+  <div class="notes-nav__links">
+    <div class="notes-nav__link">
+      <% if current_user.present? %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "notes-nav__link--logout" %>
+      <% else %>
+        <%= link_to "Login", new_user_session_path, class: "notes-nav__link--login" %>
+      <% end %>
+    </div>
+  </div>
+</nav>
