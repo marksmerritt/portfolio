@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :messages
 
   resources :notebooks do 
-    resources :notes
+    resources :notes, shallow: true
   end
 
   resources :notes, only: :index
