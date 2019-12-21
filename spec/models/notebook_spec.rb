@@ -14,11 +14,6 @@ RSpec.describe Notebook, type: :model do
       notebook.name = nil
       expect(notebook).to_not be_valid
     end
-
-    it "has a unique name" do 
-      @second_notebook = FactoryBot.build_stubbed(:second_notebook, name: notebook.name)
-      expect(@second_notebook).to_not be_valid
-    end
   end
 
   describe "#toggle_status!" do 

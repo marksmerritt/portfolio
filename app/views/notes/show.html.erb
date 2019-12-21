@@ -3,3 +3,10 @@
 
 <%= @note.title %>
 <%= markdown_to_html @note.body %>
+
+<h3>Screenshots</h3>
+<div>
+  <% @note.screenshots.each do |shot| %>
+    <%= link_to shot.filename, shot, target: :blank %>
+  <% end %>
+</div>

@@ -31,6 +31,11 @@ describe "navigation" do
 
       expect{ click_button "submit-btn" }.to change{ Note.count }.by(1)
     end
+
+    it "attaches an uploaded screenshot" do 
+      file = fixture_file_upload(Rails.root.join('public', 'apple-touch-icon.png'), 'image/png')
+      expect{ FactoryBot.create(:note, screenshots: [file]) }.to change{ ActiveStorage::Attachment.count }.by(1)
+    end
   end
 
   describe "edit" do 

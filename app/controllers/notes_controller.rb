@@ -48,7 +48,7 @@ class NotesController < ApplicationController
   private
 
   def note_params
-    params.require(:note).permit(:title, :body)
+    params.require(:note).permit(:title, :body, screenshots: [])
   end
 
   def set_notebook

@@ -4,7 +4,6 @@ class Notebook < ApplicationRecord
   has_many :notes
 
   validates_presence_of :name, :status
-  validates_uniqueness_of :name
 
   def toggle_status!
     active? ? archived! : active!

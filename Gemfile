@@ -44,3 +44,4 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'faker', '~> 2.9'
 gem 'redcarpet', '~> 3.5'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
+gem "aws-sdk-s3", require: false
