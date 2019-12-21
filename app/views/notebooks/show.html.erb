@@ -1,2 +1,8 @@
-<%= @notebook.inspect %>
+<%= @notebook.name %>
 <%= link_to "Edit", edit_notebook_path(@notebook), id: "edit-notebook-#{@notebook.name}" %>
+
+<%= link_to "New Note", new_notebook_note_path(@notebook), id: "new-note" %>
+
+<% @notes.each do |note| %>
+  <%= link_to note.title, note_path(note), id: "show-note-#{note.id}" %>
+<% end %>

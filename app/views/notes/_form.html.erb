@@ -1,0 +1,6 @@
+<%= form_with model: [@notebook, @note] do |f| %>
+  <%= f.text_field :title, id: "title-field" %>
+  <%= f.text_area :body, id: "body-field" %>
+
+  <%= f.submit "Save", id: "submit-btn" %>
+<% end %>

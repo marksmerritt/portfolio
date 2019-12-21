@@ -21,6 +21,12 @@ describe "navigation" do
       click_link "notebook-show-#{@notebook1.id}"
       expect(current_path).to eq(notebook_path(@notebook1))
     end
+
+    it "displays associated notes" do 
+      @note = FactoryBot.create(:note, notebook: @notebook1)
+      visit notebook_path(@notebook1)
+      expect(page).to have_content(@note.title)
+    end
   end
 
   describe "new" do 

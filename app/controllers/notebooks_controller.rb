@@ -7,6 +7,7 @@ class NotebooksController < ApplicationController
   end
 
   def show
+    @notes = @notebook.notes
   end
 
   def new
