@@ -1,3 +1,5 @@
-<%= @note.inspect %>
 <%= link_to "Edit", edit_note_path(@note), id: "edit-note-#{@note.id}" %>
 <%= link_to "Delete", note_path(@note), method: :delete, id: "delete-note-#{@note.id}", data: { confirm: "Are you sure you want to delete this note?" } %>
+
+<%= @note.title %>
+<%= markdown_to_html @note.body %>
