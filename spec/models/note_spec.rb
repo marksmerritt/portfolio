@@ -20,4 +20,11 @@ RSpec.describe Note, type: :model do
       expect(note).to_not be_valid
     end
   end
+
+  describe "attachments" do 
+    it "allows a screenshot to be attached" do 
+      file = fixture_file_upload(Rails.root.join('public', 'apple-touch-icon.png'), 'image/png')
+      expect{ FactoryBot.create(:note, screenshots: [file]) }.to change{ ActiveStorage::Attachment.count }.by(1)
+    end
+  end
 end
