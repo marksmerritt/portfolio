@@ -7,6 +7,6 @@
 <h3>Screenshots</h3>
 <div>
   <% @note.screenshots.each do |shot| %>
-    <%= link_to shot.filename, shot, target: :blank %>
+    <%= link_to(image_tag(shot.variant(resize: "200x200").processed.service_url), shot, target: :blank) %>
   <% end %>
 </div>

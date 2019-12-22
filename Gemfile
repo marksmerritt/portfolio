@@ -46,3 +46,4 @@ gem 'faker', '~> 2.9'
 gem 'redcarpet', '~> 3.5'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 gem "aws-sdk-s3", require: false
+gem 'mini_magick', '~> 4.9', '>= 4.9.5'
