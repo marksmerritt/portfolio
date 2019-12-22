@@ -56,7 +56,7 @@ class NotesController < ApplicationController
   end
 
   def set_note
-    @note = Note.find(params[:id])
+    @note = Note.with_attached_screenshots.find(params[:id])
   end
 
 end
